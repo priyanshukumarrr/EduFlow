@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduLearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">EduLearn</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link active">Courses</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Explore Our Courses</h1>
+            <p class="page-subtitle">Choose from our extensive collection of courses and start your learning journey today</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All Courses</button>
+                <button class="filter-btn" data-category="development">Development</button>
+                <button class="filter-btn" data-category="design">Design</button>
+                <button class="filter-btn" data-category="business">Business</button>
+                <button class="filter-btn" data-category="data-science">Data Science</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section section">
+        <div class="container">
+            <div class="courses-grid-full" id="coursesGrid">
+                <!-- Web Development -->
+                <div class="course-card-full" data-category="development">
+                    <div class="course-badge">Bestseller</div>
+                    <div class="course-icon">💻</div>
+                    <h3 class="course-title">Web Development Bootcamp</h3>
+                    <p class="course-description">Master HTML, CSS, JavaScript, React, Node.js, and modern frameworks to become a full-stack developer.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 12 weeks</span>
+                        <span class="detail-item">📈 Beginner</span>
+                        <span class="detail-item">👥 2,450 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Data Science -->
+                <div class="course-card-full" data-category="data-science">
+                    <div class="course-badge">New</div>
+                    <div class="course-icon">📊</div>
+                    <h3 class="course-title">Data Science Fundamentals</h3>
+                    <p class="course-description">Learn Python, statistics, machine learning, and data visualization to become a data scientist.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 10 weeks</span>
+                        <span class="detail-item">📈 Intermediate</span>
+                        <span class="detail-item">👥 1,890 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="course-card-full" data-category="design">
+                    <div class="course-badge">Popular</div>
+                    <div class="course-icon">🎨</div>
+                    <h3 class="course-title">UI/UX Design Masterclass</h3>
+                    <p class="course-description">Create stunning user interfaces and experiences using Figma, Adobe XD, and design principles.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 8 weeks</span>
+                        <span class="detail-item">📈 Beginner</span>
+                        <span class="detail-item">👥 3,120 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="course-card-full" data-category="development">
+                    <div class="course-icon">📱</div>
+                    <h3 class="course-title">Mobile App Development</h3>
+                    <p class="course-description">Build native mobile apps for iOS and Android using React Native and modern development tools.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 14 weeks</span>
+                        <span class="detail-item">📈 Intermediate</span>
+                        <span class="detail-item">👥 1,650 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="course-card-full" data-category="business">
+                    <div class="course-icon">📢</div>
+                    <h3 class="course-title">Digital Marketing Masterclass</h3>
+                    <p class="course-description">Master SEO, social media marketing, content marketing, and analytics to grow your business.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 6 weeks</span>
+                        <span class="detail-item">📈 Beginner</span>
+                        <span class="detail-item">👥 2,890 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="course-card-full" data-category="data-science">
+                    <div class="course-badge">Advanced</div>
+                    <div class="course-icon">🤖</div>
+                    <h3 class="course-title">Machine Learning A-Z</h3>
+                    <p class="course-description">Deep dive into ML algorithms, neural networks, and AI to build intelligent applications.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 16 weeks</span>
+                        <span class="detail-item">📈 Advanced</span>
+                        <span class="detail-item">👥 1,240 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="course-card-full" data-category="design">
+                    <div class="course-icon">🖼️</div>
+                    <h3 class="course-title">Graphic Design Essentials</h3>
+                    <p class="course-description">Learn Photoshop, Illustrator, and design fundamentals to create professional graphics.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 7 weeks</span>
+                        <span class="detail-item">📈 Beginner</span>
+                        <span class="detail-item">👥 2,340 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Business Management -->
+                <div class="course-card-full" data-category="business">
+                    <div class="course-icon">💼</div>
+                    <h3 class="course-title">Business Management & Leadership</h3>
+                    <p class="course-description">Develop essential management skills, leadership qualities, and strategic thinking abilities.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 9 weeks</span>
+                        <span class="detail-item">📈 Intermediate</span>
+                        <span class="detail-item">👥 1,780 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+
+                <!-- Python Programming -->
+                <div class="course-card-full" data-category="development">
+                    <div class="course-icon">🐍</div>
+                    <h3 class="course-title">Python Programming Complete</h3>
+                    <p class="course-description">Master Python from basics to advanced topics including OOP, databases, and web scraping.</p>
+                    <div class="course-details">
+                        <span class="detail-item">⏱️ 11 weeks</span>
+                        <span class="detail-item">📈 Beginner</span>
+                        <span class="detail-item">👥 3,450 students</span>
+                    </div>
+                    <div class="course-features">
+                        <span>✓ Lifetime access</span>
+                        <span>✓ Certificate</span>
+                        <span>✓ Projects</span>
+                    </div>
+                    <button class="btn btn-primary">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">📚</span>
+                        <span>EduLearn</span>
+                    </h3>
+                    <p class="footer-description">Empowering learners worldwide with quality education and practical skills for the future.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Data Science</a></li>
+                        <li><a href="courses.html">Design</a></li>
+                        <li><a href="courses.html">Business</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📧 info@edulearn.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Education St, Learning City, LC 12345</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
